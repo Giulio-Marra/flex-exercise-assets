@@ -12,7 +12,7 @@ header{
     height: 150px;
 }
 header img{
-    width: 35px;
+    width: 30%;
     margin-right: 8px;
 }
 ul{
@@ -24,15 +24,23 @@ ul{
 }
 li{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
     padding: 15px;
     background-color:#ffdf7f;
     color: #762506;
     border-radius: 30px;
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 #ilShop{
-    font-size: 2.0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 2em;
     padding: 30px;
     border-radius: 50px;
 }
@@ -49,15 +57,13 @@ h1{
     flex-wrap: wrap;
 }
 .card{
-    flex: 1 0 calc(50% - 10px);
-    width: 50%;
     border-radius: 50px;
     overflow: hidden;
     text-align: center;
     background-color: #fef7e2;;
     color: #762506;
     width: calc(50% - 10px); 
-     margin: 5px; 
+    margin: 5px; 
 }
 .cardBody{
     display: flex;
@@ -90,6 +96,8 @@ h2{
     margin-bottom: 10px;
 }
 article{
+    display: flex;
+    flex-direction: column;
     background-color: #fef7e2;
     color: #762506;
     padding: 30px;
@@ -99,7 +107,4 @@ article{
 article h3{
     font-size: 1.8rem;
     margin-top: 0;
-}
-article img{
-    width: 100%;
 }
